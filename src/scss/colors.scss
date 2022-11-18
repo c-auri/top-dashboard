@@ -1,0 +1,28 @@
+$white: white;
+$light-gray: #e2e8f0;
+$medium-gray: #ccd1d8;
+$black: black;
+
+$blue: #1992d4;
+$orange: #f0b429;
+
+.primary-header {
+    color: $white;
+    background-color: $blue;
+}
+
+.secondary-header {
+    background-color: $white;
+}
+
+main {
+    background-color: $light-gray;
+}
+
+.card {
+    background-color: $white;
+}
+
+a {
+    color: inherit;
+}
