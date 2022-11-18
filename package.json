@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/cauri-odin/admin-dashboard/issues"
   },
-  "homepage": "https://github.com/cauri-odin/admin-dashboard#readme"
+  "homepage": "https://github.com/cauri-odin/admin-dashboard#readme",
+  "devDependencies": {
+    "sass": "^1.56.1"
+  }
 }
