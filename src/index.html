@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="scss/main.scss">
     <title>Dashboard</title>
 </head>
@@ -13,43 +16,43 @@
 
         <div class="primary-header__heading">
             <img src="svg/view-dashboard.svg" class="logo">
-            <h1 class="main-heading">Dashboard</h1>
+            <h1 class="fs-800 fw-700">Dashboard</h1>
         </div>
 
         <nav class="primary-nav">
 
             <ul class="primary-nav__group">
-                <li class="primary-nav__item">
+                <li class="primary-nav__item fs-600 fw-500">
                     <a href="#" class="primary-nav__link">
                         <img class="icon icon--small" src="svg/home.svg">
                         <span>Home</span>
                     </a>
                 </li>
-                <li class="primary-nav__item">
+                <li class="primary-nav__item fs-600 fw-500">
                     <a href="#" class="primary-nav__link">
                         <img class="icon icon--small" src="svg/account.svg">
                         <span>Profile</span>
                     </a>
                 </li>
-                <li class="primary-nav__item">
+                <li class="primary-nav__item fs-600 fw-500">
                     <a href="#" class="primary-nav__link">
                         <img class="icon icon--small" src="svg/message-reply.svg">
                         <span>Messages</span>
                     </a>
                 </li>
-                <li class="primary-nav__item">
+                <li class="primary-nav__item fs-600 fw-500">
                     <a href="#" class="primary-nav__link">
                         <img class="icon icon--small" src="svg/history.svg">
                         <span>History</span>
                     </a>
                 </li>
-                <li class="primary-nav__item">
+                <li class="primary-nav__item fs-600 fw-500">
                     <a href="#" class="primary-nav__link">
                         <img class="icon icon--small" src="svg/calendar-check.svg">
                         <span>Tasks</span>
                     </a>
                 </li>
-                <li class="primary-nav__item">
+                <li class="primary-nav__item fs-600 fw-500">
                     <a href="#" class="primary-nav__link">
                         <img class="icon icon--small" src="svg/account-group.svg">
                         <span>Communities</span>
@@ -58,19 +61,19 @@
             </ul>
 
             <ul class="primary-nav__group">
-                <li class="primary-nav__item">
+                <li class="primary-nav__item fs-600 fw-500">
                     <a href="#" class="primary-nav__link">
                         <img class="icon icon--small" src="svg/cog.svg">
                         <span>Settings</span>
                     </a>
                 </li>
-                <li class="primary-nav__item">
+                <li class="primary-nav__item fs-600 fw-500">
                     <a href="#" class="primary-nav__link">
                         <img class="icon icon--small" src="svg/help-circle.svg">
                         <span>Support</span>
                     </a>
                 </li>
-                <li class="primary-nav__item">
+                <li class="primary-nav__item fs-600 fw-500">
                     <a href="#" class="primary-nav__link">
                         <img class="icon icon--small" src="svg/shield-check.svg">
                         <span>Privacy</span>
@@ -93,9 +96,9 @@
 
             <img src="svg/bell-ring-outline.svg" alt="Notifications" class="icon icon--small">
 
-            <a href="#" class="user user--small">
+            <a href="#" class="user">
                 <img src="#" class="icon">
-                <span class="user__name">Morgan&nbsp;Oakley</span>
+                <span class="fs-600 fw-600">Morgan&nbsp;Oakley</span>
             </a>
 
         </div>
@@ -104,8 +107,8 @@
 
             <a href="#" class="user user--large">
                 <img src="#" class="icon icon--large">
-                <span class="user__greeting">Hi there,</span>
-                <span class="user__full-name"><span class="user__name">Morgan&nbsp;Oakley</span><span class="user__handle">morgan</span></span>
+                <span class="fs-300 fw-600">Hi there,</span>
+                <span class="fs-700 fw-600"><span class="user__name">Morgan&nbsp;Oakley</span><span class="user__handle user__handle--brackets">morgan</span></span>
             </a>
 
             <button class="secondary-header__button">New</button>
@@ -120,11 +123,11 @@
 
         <div class="projects">
 
-            <h3 class="main__heading">Your Projects</h3>
+            <h3 class="projects__heading fs-600 fw-500">Your Projects</h3>
 
             <article class="project card" href="#">
-                <h3 class="project__heading">Super Cool Project</h3>
-                <p class="project__description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque maxime sequi recusandae minima ipsum quibusdam in earum officia praesentium similique perspiciatis numquam, aspernatur corrupti molestias nesciunt, possimus porro veritatis quis!</p>
+                <h3 class="fs-600 fw-500">Super Cool Project</h3>
+                <p class="fs-400 clr-dark-gray">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque maxime sequi recusandae minima ipsum quibusdam in earum officia praesentium similique perspiciatis numquam, aspernatur corrupti molestias nesciunt, possimus porro veritatis quis!</p>
                 <div class="project__buttons">
                     <img src="svg/star-outline.svg" alt="Favorite" class="icon icon--small">
                     <img src="svg/eye-outline.svg" alt="Watch" class="icon icon--small">
@@ -133,8 +136,8 @@
             </article>
 
             <article class="project card" href="#">
-                <h3 class="project__heading">Less Cool Project</h3>
-                <p class="project__description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas libero laborum in reiciendis. Non iste doloremque amet rem dolorum! Adipisci cupiditate culpa ipsa unde reiciendis alias aliquid deserunt blanditiis excepturi.</p>
+                <h3 class="fs-600 fw-500">Less Cool Project</h3>
+                <p class="fs-400 clr-dark-gray">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas libero laborum in reiciendis. Non iste doloremque amet rem dolorum! Adipisci cupiditate culpa ipsa unde reiciendis alias aliquid deserunt blanditiis excepturi.</p>
                 <div class="project__buttons">
                     <img src="svg/star-outline.svg" alt="Favorite" class="icon icon--small">
                     <img src="svg/eye-outline.svg" alt="Watch" class="icon icon--small">
@@ -143,8 +146,8 @@
             </article>
 
             <article class="project card" href="#">
-                <h3 class="project__heading">Impossible App</h3>
-                <p class="project__description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis nostrum deleniti provident, facere, ullam modi iste magnam, beatae maiores aliquam non nisi! Aliquam officiis voluptatum dolorum animi quam exercitationem quod?</p>
+                <h3 class="fs-600 fw-500">Impossible App</h3>
+                <p class="fs-400 clr-dark-gray">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis nostrum deleniti provident, facere, ullam modi iste magnam, beatae maiores aliquam non nisi! Aliquam officiis voluptatum dolorum animi quam exercitationem quod?</p>
                 <div class="project__buttons">
                     <img src="svg/star-outline.svg" alt="Favorite" class="icon icon--small">
                     <img src="svg/eye-outline.svg" alt="Watch" class="icon icon--small">
@@ -153,8 +156,8 @@
             </article>
 
             <article class="project card" href="#">
-                <h3 class="project__heading">Easy Peasy App</h3>
-                <p class="project__description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi possimus accusamus nobis voluptates delectus quisquam, exercitationem nesciunt minus laudantium qui vel sed corrupti necessitatibus natus et dolore, accusantium aperiam libero!</p>
+                <h3 class="fs-600 fw-500">Easy Peasy App</h3>
+                <p class="fs-400 clr-dark-gray">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi possimus accusamus nobis voluptates delectus quisquam, exercitationem nesciunt minus laudantium qui vel sed corrupti necessitatibus natus et dolore, accusantium aperiam libero!</p>
                 <div class="project__buttons">
                     <img src="svg/star-outline.svg" alt="Favorite" class="icon icon--small">
                     <img src="svg/eye-outline.svg" alt="Watch" class="icon icon--small">
@@ -163,8 +166,8 @@
             </article>
 
             <article class="project card" href="#">
-                <h3 class="project__heading">Ad Blocker</h3>
-                <p class="project__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi deleniti explicabo consequuntur ipsa blanditiis vitae maxime aliquam perspiciatis, officiis molestias debitis similique veniam eaque quia praesentium nihil odio nisi nam.</p>
+                <h3 class="fs-600 fw-500">Ad Blocker</h3>
+                <p class="fs-400 clr-dark-gray">Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi deleniti explicabo consequuntur ipsa blanditiis vitae maxime aliquam perspiciatis, officiis molestias debitis similique veniam eaque quia praesentium nihil odio nisi nam.</p>
                 <div class="project__buttons">
                     <img src="svg/star-outline.svg" alt="Favorite" class="icon icon--small">
                     <img src="svg/eye-outline.svg" alt="Watch" class="icon icon--small">
@@ -173,8 +176,8 @@
             </article>
 
             <article class="project card" href="#">
-                <h3 class="project__heading">Money Maker</h3>
-                <p class="project__description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo, labore! Ad quod blanditiis reprehenderit commodi, doloremque, libero repudiandae soluta iste ut placeat consequuntur ipsum, eveniet eum facilis dicta odit aut.</p>
+                <h3 class="fs-600 fw-500">Money Maker</h3>
+                <p class="fs-400 clr-dark-gray">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo, labore! Ad quod blanditiis reprehenderit commodi, doloremque, libero repudiandae soluta iste ut placeat consequuntur ipsum, eveniet eum facilis dicta odit aut.</p>
                 <div class="project__buttons">
                     <img src="svg/star-outline.svg" alt="Favorite" class="icon icon--small">
                     <img src="svg/eye-outline.svg" alt="Watch" class="icon icon--small">
@@ -188,23 +191,23 @@
 
             <div class="announcements">
 
-                <h3 class="main__heading">Announcements</h3>
+                <h3 class="fs-600 fw-500">Announcements</h3>
 
                 <div class="card">
 
                     <article class="announcement" href="#">
-                        <h3 class="announcement__heading">Site Maintenance</h3>
-                        <p class="announcement__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores, architecto. Incidunt cum distinctio ab, dolore suscipit sapiente maxime eaque soluta magnam iste. Illo praesentium, eveniet repellendus quaerat consectetur illum quae.</p>
+                        <h3 class="fs-500 fw-500">Site Maintenance</h3>
+                        <p class="fs-300 clr-dark-gray">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores, architecto. Incidunt cum distinctio ab, dolore suscipit sapiente maxime eaque soluta magnam iste. Illo praesentium, eveniet repellendus quaerat consectetur illum quae.</p>
                     </article>
 
                     <article class="announcement" href="#">
-                        <h3 class="announcement__heading">Community Share Day</h3>
-                        <p class="announcement__description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis animi accusantium explicabo magni corporis provident minima molestiae cumque doloremque quod, culpa suscipit facilis fugit dicta esse ad itaque eveniet. Nisi?</p>
+                        <h3 class="fs-500 fw-500">Community Share Day</h3>
+                        <p class="fs-300 clr-dark-gray">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis animi accusantium explicabo magni corporis provident minima molestiae cumque doloremque quod, culpa suscipit facilis fugit dicta esse ad itaque eveniet. Nisi?</p>
                     </article>
 
                     <article class="announcement" href="#">
-                        <h3 class="announcement__heading">Updated Privacy Policy</h3>
-                        <p class="announcement__description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestias reiciendis ullam optio enim in obcaecati? Non, fuga sapiente inventore corrupti autem accusantium eos aspernatur quia alias quod tenetur repellat numquam.</p>
+                        <h3 class="fs-500 fw-500">Updated Privacy Policy</h3>
+                        <p class="fs-300 clr-dark-gray">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestias reiciendis ullam optio enim in obcaecati? Non, fuga sapiente inventore corrupti autem accusantium eos aspernatur quia alias quod tenetur repellat numquam.</p>
                     </article>
 
                 </div>
@@ -212,32 +215,32 @@
 
             <div class="trending">
 
-                <h3 class="main__heading">Trending</h3>
+                <h3 class="fs-600 fw-500">Trending</h3>
 
                 <div class="card">
 
                     <article class="trend" href="#">
                         <img src="#" class="icon">
                         <span class="user__handle">tegan</span>
-                        <span class="trend__description"></span>
+                        <span class="trend__description clr-dark-gray">World Peace Builder</span>
                     </article>
 
                     <article class="trend" href="#">
                         <img src="#" class="icon">
                         <span class="user__handle">morgan</span>
-                        <span class="trend__description">Super Cool Project</span>
+                        <span class="trend__description clr-dark-gray">Super Cool Project</span>
                     </article>
 
                     <article class="trend" href="#">
                         <img src="#" class="icon">
                         <span class="user__handle">kendall</span>
-                        <span class="trend__description">Life Changing App</span>
+                        <span class="trend__description clr-dark-gray">Life Changing App</span>
                     </article>
 
                     <article class="trend" href="#">
                         <img src="#" class="icon">
                         <span class="user__handle">alex</span>
-                        <span class="trend__description">No Traffic Maker</span>
+                        <span class="trend__description clr-dark-gray">No Traffic Maker</span>
                     </article>
 
                 </div>

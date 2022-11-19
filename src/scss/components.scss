@@ -1,3 +1,8 @@
+* {
+    font-family: 'Roboto', Verdana, Geneva, Tahoma , sans-serif;
+}
+
+
 h1, h2, h3, h4, h5, h6 {
     margin: 0;
     font: inherit;
@@ -29,14 +34,14 @@ ul, li {
     &::before {
         content: '@';
     }
-}
 
-.user__full-name .user__handle {
-    &::before {
-        content: ' (@';
-    }
+    &--brackets {
+        &::before {
+            content: ' (@';
+        }
 
-    &::after {
-        content: ')';
+        &::after {
+            content: ')';
+        }
     }
 }
