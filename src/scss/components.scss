@@ -1,3 +1,14 @@
+button {
+    height: 2.5rem;
+    width: 7rem;
+    border: 0;
+    border-radius: 20px;
+    font-size: var(--fs-500);
+    font-weight: 500;
+    color: var(--clr-white);
+    background-color: var(--clr-primary);
+}
+
 .logo {
     max-width: 2rem;
 }
