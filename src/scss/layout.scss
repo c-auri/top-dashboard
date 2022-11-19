@@ -16,7 +16,8 @@ main,
 .primary-nav__group,
 .secondary-header > div,
 .search,
-.user {
+.user,
+.project__buttons {
     display: flex;
 }
 
@@ -80,6 +81,31 @@ main,
 
     .main__heading {
         grid-column: 1 / -1;
+    }
+}
+
+.card {
+    margin: .5rem;
+    padding: 2rem 1.5rem;
+    border-radius: 15px;
+}
+
+.project {
+    position: relative;
+
+    &::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 10px;
+        border-radius: 15px 0 0 15px;
+    }
+
+    &__buttons {
+        justify-content: flex-end;
+        gap: 1rem;
     }
 }
 

@@ -6,23 +6,22 @@ $black: black;
 $blue: #1992d4;
 $orange: #f0b429;
 
+main {
+    background-color: $light-gray;
+}
+
 .primary-header {
     color: $white;
     background-color: $blue;
 }
 
-.secondary-header {
-    background-color: $white;
-}
-
-main {
-    background-color: $light-gray;
-}
-
+.secondary-header,
 .card {
     background-color: $white;
 }
 
-a {
-    color: inherit;
+.project {
+    &::before {
+        background-color: $orange;
+    }
 }
