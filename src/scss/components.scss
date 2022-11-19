@@ -23,3 +23,19 @@ ul, li {
         aspect-ratio: 1;
     }
 }
+
+.user__handle {
+    &::before {
+        content: '@';
+    }
+}
+
+.user__full-name .user__handle {
+    &::before {
+        content: ' (@';
+    }
+
+    &::after {
+        content: ')';
+    }
+}
