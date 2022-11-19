@@ -40,9 +40,14 @@ main,
     }
 }
 
-.secondary-header > div {
-    gap: .5rem;
-    align-items: center;
+.secondary-header {
+    padding: 1rem 2rem;
+
+    > div {
+        padding: 1rem 0;
+        gap: .5rem;
+        align-items: center;
+    }
 }
 
 .search {
@@ -71,15 +76,25 @@ main,
     gap: 1rem;
 }
 
-.main__sidebar {
-    align-content: start;
+main {
+    padding: 3rem 1rem;
+}
+
+.main {
+    &__heading {
+        padding-inline: .75rem;
+    }
+
+    &__sidebar {
+        align-content: start;
+    }
 }
 
 .projects {
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     align-content: start;
 
-    &__heading {
+    > .main__heading {
         grid-column: 1 / -1;
     }
 }
