@@ -1,27 +1,21 @@
-$white: white;
-$light-gray: #e2e8f0;
-$medium-gray: #ccd1d8;
-$black: black;
-
-$blue: #1992d4;
-$orange: #f0b429;
+@use "./abstracts" as *;
 
 main {
-    background-color: $light-gray;
+    background-color: var(--clr-light-gray);
 }
 
 .primary-header {
-    color: $white;
-    background-color: $blue;
+    color: var(--clr-white);
+    background-color: var(--clr-primary);
 }
 
 .secondary-header,
 .card {
-    background-color: $white;
+    background-color: var(--clr-white);
 }
 
 .project {
     &::before {
-        background-color: $orange;
+        background-color: var(--clr-accent);
     }
 }
