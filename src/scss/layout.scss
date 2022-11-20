@@ -95,6 +95,7 @@ main,
     }
 
     &__greeting {
+        margin-right: auto;
         grid-column: span 2;
         display: grid;
         grid-template-columns: auto 1fr;
@@ -134,11 +135,12 @@ main,
 }
 
 main {
-    padding: 3rem 1rem;
+    padding: 2rem 1rem;
 }
 
 .main {
     &__heading {
+        margin-bottom: -.5rem;
         padding-inline: .75rem;
     }
 
@@ -151,14 +153,21 @@ main {
     margin: .5rem;
     padding: 2rem;
     border-radius: 15px;
+    display: flex;
+    flex-direction: column;
 
     p {
         margin-top: .25rem;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
     }
 }
 
 .projects {
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-template-rows: auto;
+    grid-auto-rows: 16rem;
     align-content: start;
 
     > .main__heading {
@@ -168,6 +177,10 @@ main {
 
 .project {
     position: relative;
+
+    p {
+        -webkit-line-clamp: 6;
+    }
 
     &::before {
         content: "";
@@ -180,19 +193,18 @@ main {
     }
 
     &__buttons {
-        margin-top: 2rem;
+        flex: 1;
+        padding-top: 1rem;
         display: flex;
         justify-content: flex-end;
+        align-items: flex-end;
         gap: 1rem;
     }
 }
 
 .announcement {
     p {
-        display: -webkit-box;
         -webkit-line-clamp: 3;
-        -webkit-box-orient: vertical;
-        overflow: hidden;
     }
 
     + .announcement {
