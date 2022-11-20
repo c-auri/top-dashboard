@@ -150,8 +150,22 @@ main {
 
 .card {
     margin: .5rem;
-    padding: 2rem 1.5rem;
+    padding: 2rem;
     border-radius: 15px;
+}
+
+.announcement {
+    a {
+        display: flex;
+        flex-direction: column;
+        gap: .25rem;
+    }
+
+    + .announcement {
+        margin-top: 1rem;
+        padding-top: 1rem;
+        border-top: 1px solid var(--clr-medium-gray);
+    }
 }
 
 .projects {
