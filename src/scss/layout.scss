@@ -11,19 +11,29 @@ main,
     display: grid;
 }
 
-.primary-header,
 .primary-header__heading,
 .primary-nav__group {
     display: flex;
 }
 
-.primary-header__heading {
-    margin-right: auto;
+.primary-header {
+    display: flex;
+    justify-content: space-between;
     align-items: center;
+    padding: 1rem clamp(1rem, 5vw, 3rem);
+
+    &__heading {
+        gap: .5rem;
+        align-items: center;
+    }
 }
 
 .primary-nav {
-    display: none;
+    &__list {
+        padding-inline: .5rem;
+        display: none;
+        flex-direction: column;
+    }
 
     &__group {
         flex-direction: inherit;
@@ -31,8 +41,16 @@ main,
         gap: 1rem;
     }
 
-    &__link .icon {
+    &__link {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    &__icon {
         display: none;
+        width: 1.5rem;
+        aspect-ratio: 1;
     }
 }
 
@@ -195,27 +213,33 @@ main {
 
 @media (min-width: 1000px) {
     body {
-        grid-template-columns: 250px 1fr;
-    }
-
-    .primary-header,
-    .primary-nav{
-        flex-direction: column;
+        grid-template-columns: clamp(250px, 20vw, 300px) 1fr;
     }
 
     .primary-header {
+        padding: 1rem;
         grid-row: span 2;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap: 2rem;
+
+        &__nav-toggler {
+            display: none;
+        }
     }
 
     .primary-nav {
-        display: flex;
-        gap: 3rem;
+        &__list {
+            display: flex;
+            gap: 3rem;
+        }
 
         &__group {
             align-items: flex-start;
         }
 
-        &__link .icon {
+        &__icon {
             display: initial;
         }
     }

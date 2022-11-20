@@ -10,7 +10,7 @@ button {
 }
 
 .logo {
-    max-width: 2rem;
+    max-width: 2.5rem;
 }
 
 .icon {
@@ -33,6 +33,14 @@ button {
         &::after {
             content: ')';
         }
+    }
+}
+
+.primary-header {
+    &__nav-toggler {
+        cursor: pointer;
+        width: 2.5rem;
+        aspect-ratio: 1;
     }
 }
 
