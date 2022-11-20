@@ -188,6 +188,13 @@ main {
 }
 
 .announcement {
+    p {
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+    }
+
     + .announcement {
         margin-top: 1rem;
         padding-top: 1rem;
