@@ -151,6 +151,10 @@ main {
     margin: .5rem;
     padding: 2rem;
     border-radius: 15px;
+
+    p {
+        margin-top: .25rem;
+    }
 }
 
 .projects {
@@ -176,18 +180,14 @@ main {
     }
 
     &__buttons {
+        margin-top: 2rem;
+        display: flex;
         justify-content: flex-end;
         gap: 1rem;
     }
 }
 
 .announcement {
-    a {
-        display: flex;
-        flex-direction: column;
-        gap: .25rem;
-    }
-
     + .announcement {
         margin-top: 1rem;
         padding-top: 1rem;
