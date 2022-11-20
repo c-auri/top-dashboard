@@ -120,7 +120,7 @@ main,
 }
 
 .avatar {
-    width: 2rem;
+    width: 2.5rem;
     aspect-ratio: 1;
 
     &--large {
@@ -154,20 +154,6 @@ main {
     border-radius: 15px;
 }
 
-.announcement {
-    a {
-        display: flex;
-        flex-direction: column;
-        gap: .25rem;
-    }
-
-    + .announcement {
-        margin-top: 1rem;
-        padding-top: 1rem;
-        border-top: 1px solid var(--clr-medium-gray);
-    }
-}
-
 .projects {
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     align-content: start;
@@ -193,6 +179,37 @@ main {
     &__buttons {
         justify-content: flex-end;
         gap: 1rem;
+    }
+}
+
+.announcement {
+    a {
+        display: flex;
+        flex-direction: column;
+        gap: .25rem;
+    }
+
+    + .announcement {
+        margin-top: 1rem;
+        padding-top: 1rem;
+        border-top: 1px solid var(--clr-medium-gray);
+    }
+}
+
+.trends {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.trend {
+    cursor: pointer;
+    display: grid;
+    gap: 0 1rem;
+    grid-template-columns: auto 1fr;
+
+    .avatar {
+        grid-row: span 2;
     }
 }
 
