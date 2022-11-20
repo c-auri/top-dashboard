@@ -13,11 +13,7 @@ main,
 
 .primary-header,
 .primary-header__heading,
-.primary-nav__group,
-.secondary-header > div,
-.search,
-.user,
-.project__buttons {
+.primary-nav__group {
     display: flex;
 }
 
@@ -41,32 +37,76 @@ main,
 }
 
 .secondary-header {
-    padding: 1rem 2rem;
+    padding: 1rem clamp(1rem, 5vw, 3rem);
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+    gap: 2rem;
 
-    > div {
-        padding: 1rem 0;
-        gap: .5rem;
+    &__search {
+        display: flex;
+        gap: .25rem;
+
+        label {
+            padding-top: .1rem;
+            display: flex;
+            align-items: center;
+        }
+    }
+
+    &__search-bar {
+        margin-right: clamp(1rem, 5vw, 3rem);
+        flex: 1;
+    }
+
+    &__controls {
+        display: flex;
+        justify-content: flex-end;
         align-items: center;
-    }
-}
+        gap: 1rem;
 
-.search {
-    flex: 1;
-}
+        .user {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
 
-.user {
-    &--small {
-        display: none;
-    }
-
-    &--large {
-        margin-right: auto;
-
-        > .icon,
-        > .user__greeting,
-        .user__handle {
+        .user__name {
             display: none;
         }
+    }
+
+    &__greeting {
+        grid-column: span 2;
+        display: grid;
+        grid-template-columns: auto 1fr;
+        align-items: end;
+        gap: 0 1rem;
+
+        > .avatar {
+            grid-row: span 2;
+        }
+
+        span:last-child {
+            align-self: start;
+        }
+    }
+
+    &__buttons {
+        margin-bottom: .5rem;
+        grid-column: span 2;
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+    }
+}
+
+.avatar {
+    width: 2rem;
+    aspect-ratio: 1;
+
+    &--large {
+        width: 4rem;
     }
 }
 
@@ -125,24 +165,13 @@ main {
 }
 
 @media (min-width: 600px) {
-    .user {
-        &--small {
+    .secondary-header {
+        &__controls .user__name {
             display: initial;
         }
 
-        &--large {
-            display: grid;
-            grid-template-columns: auto 1fr;
-
-            > .icon,
-            > .user__greeting,
-            .user__handle {
-                display: initial;
-            }
-
-            > .icon {
-                grid-row: span 2;
-            }
+        &__buttons {
+            justify-content: flex-end;
         }
     }
 }
@@ -150,6 +179,17 @@ main {
 @media (min-width: 800px) {
     main {
         grid-template-columns: 1fr 250px;
+    }
+
+    .secondary-header {
+        &__search-bar {
+            margin-right: 0;
+        }
+
+        &__greeting,
+        &__buttons {
+            grid-column: span 1;
+        }
     }
 }
 

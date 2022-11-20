@@ -87,34 +87,29 @@
 
     <header class="secondary-header">
 
-        <div>
+        <form action="" class="secondary-header__search">
+            <label for="search-bar"><img src="svg/magnify.svg" alt="Search" class="icon"></label>
+            <input type="text" name="search" id="search-bar" class="secondary-header__search-bar" placeholder="Search">
+        </form>
 
-            <form action="" class="search">
-                <label for="search"><img src="svg/magnify.svg" alt="Search" class="icon icon--small"></label>
-                <input type="text" name="search" id="search-bar">
-            </form>
-
+        <div class="secondary-header__controls">
             <img src="svg/bell-ring-outline.svg" alt="Notifications" class="icon icon--small">
-
             <a href="#" class="user">
-                <img src="#" class="icon">
-                <span class="fs-600 fw-600">Morgan&nbsp;Oakley</span>
+                <img src="./img/oakley.png" class="avatar">
+                <span class="user__name fs-600 fw-600">Morgan&nbsp;Oakley</span>
             </a>
-
         </div>
 
-        <div>
+        <a href="#" class="secondary-header__greeting">
+            <img src="./img/oakley.png" class="avatar avatar--large">
+            <span class="fs-300 fw-600">Hi there,</span>
+            <span class="fs-700 fw-600"><span class="user__name">Morgan&nbsp;Oakley</span><span class="user__handle user__handle--brackets">morgan</span></span>
+        </a>
 
-            <a href="#" class="user user--large">
-                <img src="#" class="icon icon--large">
-                <span class="fs-300 fw-600">Hi there,</span>
-                <span class="fs-700 fw-600"><span class="user__name">Morgan&nbsp;Oakley</span><span class="user__handle user__handle--brackets">morgan</span></span>
-            </a>
-
+        <div class="secondary-header__buttons">
             <button class="secondary-header__button">New</button>
             <button class="secondary-header__button">Upload</button>
             <button class="secondary-header__button">Share</button>
-
         </div>
 
     </header>
