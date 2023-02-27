@@ -4,9 +4,7 @@ body {
 }
 
 body,
-main,
 .trending__container,
-.projects,
 .main__sidebar {
     display: grid;
 }
@@ -128,13 +126,13 @@ main,
     }
 }
 
-main,
-.main__sidebar,
-.projects {
+.main__sidebar {
     gap: 1rem;
 }
 
 main {
+    display: grid;
+    gap: 1rem;
     padding: 1rem 1rem;
 }
 
@@ -164,22 +162,34 @@ main {
     }
 }
 
+.upcoming,
 .projects {
+    padding-bottom: 1rem;
+    display: grid;
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     grid-template-rows: auto;
-    grid-auto-rows: 16rem;
     align-content: start;
+    gap: 1rem;
 
     > .main__heading {
         grid-column: 1 / -1;
     }
 }
 
-.project {
+.upcoming {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-auto-rows: 10rem;
+}
+
+.projects {
+    grid-auto-rows: 14rem;
+}
+
+.upcoming__event {
     position: relative;
 
     p {
-        -webkit-line-clamp: 6;
+        -webkit-line-clamp: 3;
     }
 
     &::before {
@@ -199,6 +209,35 @@ main {
         justify-content: flex-end;
         align-items: flex-end;
         gap: 1.5rem;
+    }
+}
+
+.main__content .card  {
+    position: relative;
+
+    &__buttons {
+        flex: 1;
+        padding-top: 1rem;
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+        gap: 1.5rem;
+    }
+
+    &::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 10px;
+        border-radius: 15px 0 0 15px;
+    }
+}
+
+.project {
+    p {
+        -webkit-line-clamp: 6;
     }
 }
 

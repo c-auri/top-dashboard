@@ -28,22 +28,6 @@ button {
     }
 }
 
-.user__handle {
-    &::before {
-        content: '@';
-    }
-
-    &--brackets {
-        &::before {
-            content: ' (@';
-        }
-
-        &::after {
-            content: ')';
-        }
-    }
-}
-
 .primary-header {
     &__nav-toggler {
         cursor: pointer;
