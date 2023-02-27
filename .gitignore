@@ -1,6 +1,7 @@
 node_modules/
 dev/
 
+.parcel-cache/
 .sass-cache/
 .cache/
 *.css.map
