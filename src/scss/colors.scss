@@ -13,7 +13,7 @@ main {
     background-color: var(--clr-white);
 }
 
-.project {
+.main__content .card {
     &::before {
         background-color: var(--clr-accent);
     }
